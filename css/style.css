@@ -1,0 +1,346 @@
+/*Customs font*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  margin: 1em;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* hover effect for buttons */
+.button {
+  opacity: .6;
+  transition: 0.3s;
+}
+
+.button:hover {
+  opacity: 1;
+}
+
+/* privacy banner */
+#banner {
+  width: 100%;
+  height: 30px;
+  left: 0px;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-section {
+  font-family: 'Times New Roman', Times, serif;
+  width: 100%;
+  height: 100px;
+  background-color: #1CBFCB;
+  max-height: 100px;
+}
+
+#logo {
+  float: left;
+  padding-left: 10px;
+  padding-top: 0px;
+  height: 90px;
+}
+
+.nav-menu {
+  font-family: 'Times New Roman', Times, serif;
+  float: right;
+  padding-right: 200px;
+  padding-top: 35px;
+}
+
+.nav-menu a {
+  margin-left: 80px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.purchase-form-section {
+  font-family: 'Times New Roman', Times, serif;
+  border-radius: 10px;
+  width: 80%;
+  height: 250px;
+  background-color: rgba(84, 110, 221, 100);
+  margin-top: 20px;
+  margin-left: 10%;
+  text-align: center;
+  padding-top: 10px;
+}
+
+fieldset {
+  border: 0;
+  padding-top: 20px;
+}
+
+
+.form-content {
+  margin-top: 60px;
+}
+
+select {
+  font-family: 'Times New Roman', Times, serif;
+  width: 250px;
+  padding-left: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  height: 34px;
+}
+
+.input-date {
+  font-family: 'Times New Roman', Times, serif;
+  width: 200px;
+  padding-left: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  height: 34px;
+}
+.input-num,
+#buy {
+  font-family: 'Times New Roman', Times, serif;
+  width: 80px;
+  padding-left: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  height: 34px;
+}
+#buy {
+  margin-left: 20px;
+  background: #8CC63F;
+}
+
+label {
+  padding-left: 20px;
+}
+.slideshow-container {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slideshow-container img {
+  width: 800px;
+  height: 400px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  z-index: -1;
+}
+figcaption {
+  margin-left: 10px;
+}
+figure { 
+    display: inline-block;
+}
+
+.dot-container{
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+.dot {
+  font-family: 'Times New Roman', Times, serif;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.description-container{
+  font-family: 'Times New Roman', Times, serif;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  height: 35vh;
+  width: 100vw;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.description-item{
+  font-family: 'Times New Roman', Times, serif;
+  width: 25vw;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: #c4c4c4;
+  border-radius: 10px;
+  margin-bottom: 5vh;
+}
+
+/*direction page*/
+.direction-container {
+  display: flex;
+  align-items: center;
+
+}
+
+.direction-box {
+  width: 40%;
+  margin: 30px;
+  margin-left: 15vw;
+  padding: 30px;
+  background-color: #c4c4c4;
+  border-radius: 10px;
+}
+
+hr {
+  height: 1px;
+  background-color: whitesmoke;
+  border: none;
+}
+
+#travel {
+  width: 300px;
+  position: absolute;
+  z-index: 1;
+  left: 80vw;
+  animation-name: travelAnimation;
+  animation-duration: 4s;
+}
+
+.map {
+  width:250px;
+  height: 250px;
+}
+
+@keyframes travelAnimation {
+  0%{
+    transform: translateX(-80vw);
+  }
+
+  50% {
+    transform: translateX(5vw);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.direction-logo {
+  width: 80px;
+  height: 80px;
+  margin-left: 40px;
+}
+.direction-logo object{
+  width: 80px;
+  height: 80px;
+}
+.map-logo {
+  margin-left: 60px;
+}
+
+a {
+  display: inline-block;
+}
+object {
+  pointer-events: none;
+}
+
+/*faq page*/
+.faq-question-container {
+  height: 40px;
+  width: 30%;
+  margin: 30px;
+  margin-left: 150px;
+  background: #0e0707;
+  display: flex;
+  align-items: center;
+}
+.faq-question-container h3 {
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  padding-left: 30px;
+}
+
+.faq-answer-container {
+  font-family: 'Times New Roman', Times, serif;
+  width: 40%;
+  margin: 30px;
+  margin-left: 150px;
+  padding: 30px;
+  background-color: #c4c4c4;
+  border-radius: 10px;
+}
+
+.faq-contact-container {
+  font-family: 'Times New Roman', Times, serif;
+  width: 30%;
+  height: 65vh;
+  position: absolute;
+  top: 25vh;
+  right: 10vw;
+}
+.faq-contact-container input {
+  font-family: 'Times New Roman', Times, serif;
+  border: 1px solid #ccc;
+  background-color: #c4c4c4;
+  border-radius: 20px;
+  width: 250px;
+  padding-left: 10px;
+  font-size: 16px;
+  height: 50px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+::placeholder {
+  color: white;
+}
+
+#email,
+#subject,
+.faq-contact-container textarea {
+  width: 540px;
+}
+
+.faq-contact-container textarea {
+  font-family: 'Times New Roman', Times, serif;
+  height: 350px;
+  background-color: #c4c4c4;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding-left: 15px;
+  padding-top: 5px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.faq-contact-container input[type="submit"] {
+  color: white;
+  float: right;
+  background-color: rgb(84, 110, 221);
+}
+
+.faq-answer-container table, th, td {
+  border:1px solid grey;
+}
+.faq-answer-container table{
+  width:100%;
+}
+.faq-answer-container td{
+  padding-left: 5px;
+}
+
+
+footer{
+  font-family: 'Times New Roman', Times, serif;
+  width: 100%;
+  background-color: #1CBFCB;
+  bottom:0;
+  text-align: center;
+  color: white;
+}
