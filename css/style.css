@@ -1,9 +1,15 @@
-/*Customs font*/
+/*Load custom font*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body {
-  margin: 1em;
+  margin: 2em;
   font-family: 'Roboto', sans-serif;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas:
+  'header'
+  'main'
+  'footer';
 }
 
 /* hover effect for buttons */
@@ -18,6 +24,7 @@ body {
 
 /* privacy banner */
 #banner {
+  grid-area: banner;
   width: 100%;
   height: 30px;
   left: 0px;
@@ -30,113 +37,46 @@ body {
 .nav-section {
   font-family: 'Times New Roman', Times, serif;
   width: 100%;
-  height: 100px;
+  height: 400px;
   background-color: #1CBFCB;
-  max-height: 100px;
+  max-height: 500px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-areas: 'logo title title title title'
+  'banner banner banner banner banner';
 }
 
 #logo {
-  float: left;
+  grid-area: logo;
+  /* float: left; */
   padding-left: 10px;
   padding-top: 0px;
   height: 90px;
 }
 
-.nav-menu {
+.title-section {
+  grid-area: title;
   font-family: 'Times New Roman', Times, serif;
-  float: right;
-  padding-right: 200px;
-  padding-top: 35px;
+  /* float: right; */
+  /* padding-right: 200px; */
+  /* padding-top: 35px; */
+  justify-content: center;
 }
-
-.nav-menu a {
-  margin-left: 80px;
-}
-
-a {
-  color: white;
-  text-decoration: none;
-}
-
-.purchase-form-section {
-  font-family: 'Times New Roman', Times, serif;
-  border-radius: 10px;
-  width: 80%;
-  height: 250px;
-  background-color: rgba(84, 110, 221, 100);
-  margin-top: 20px;
-  margin-left: 10%;
-  text-align: center;
-  padding-top: 10px;
-}
-
-fieldset {
-  border: 0;
-  padding-top: 20px;
-}
-
-
-.form-content {
-  margin-top: 60px;
-}
-
-select {
-  font-family: 'Times New Roman', Times, serif;
-  width: 250px;
-  padding-left: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  height: 34px;
-}
-
-.input-date {
-  font-family: 'Times New Roman', Times, serif;
-  width: 200px;
-  padding-left: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  height: 34px;
-}
-.input-num,
-#buy {
-  font-family: 'Times New Roman', Times, serif;
-  width: 80px;
-  padding-left: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  height: 34px;
-}
-#buy {
-  margin-left: 20px;
-  background: #8CC63F;
-}
-
-label {
-  padding-left: 20px;
-}
-.slideshow-container {
+/*
+.ss {
   margin-top: 40px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.slideshow-container img {
+.ss img {
   width: 800px;
   height: 400px;
   margin-left: 10px;
   margin-right: 10px;
   border-radius: 10px;
   z-index: -1;
-}
-figcaption {
-  margin-left: 10px;
-}
-figure { 
-    display: inline-block;
 }
 
 .dot-container{
@@ -159,7 +99,7 @@ figure {
 .active, .dot:hover {
   background-color: #717171;
 }
-
+/*
 .description-container{
   font-family: 'Times New Roman', Times, serif;
   display: grid;
@@ -182,6 +122,7 @@ figure {
 }
 
 /*direction page*/
+/*
 .direction-container {
   display: flex;
   align-items: center;
@@ -252,6 +193,7 @@ object {
 }
 
 /*faq page*/
+/*
 .faq-question-container {
   height: 40px;
   width: 30%;
@@ -343,4 +285,4 @@ footer{
   bottom:0;
   text-align: center;
   color: white;
-}
+} 

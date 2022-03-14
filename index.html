@@ -18,18 +18,26 @@
   <header>
     <!--Begin global top nav bar-->
     <nav class="nav-section">
-
       <!--Logo with the url link of homepage-->
-      <a href="index.html">
-        <img src="img/logo/aanr-logo.png" alt="AANR logo" id="logo" />
+      <div id="logo">
+        <a href="index.html">
+          <img src="img/logo/aanr-logo.png" alt="AANR logo">
+        </a>
+      </div>
 
-        <!--Undressed Press title area-->
-        <h1 id="up-title-text">Undressed Press</h1>
+      <!--Undressed Press title area-->
+      <div class="title-section">
+        <a href="index.html">
+          <h1 id="up-title-text">Undressed Press</h1>
+        </a>
 
         <!--Subtitle area-->
         <div class="subtitle-section">
-          <h3 class="subtitle-text">February 2022</h3>
+          <a href="index.html">
+            <h3 class="subtitle-text">February 2022</h3>
+          </a>
         </div>
+      </div>
       </a>
 
       <!--Privacy banner-->
@@ -43,36 +51,36 @@
 
   <main>
     <!--Begin articles slideshow-->
-    <div class="ss-slideshow-container">
+    <div class="ss">
 
       <!--Left button control-->
       <button onclick="leftArrow()">&lt;</button>
 
       <!--Image loader-->
-      <img id="ss-slider" src="img/article/Great-British-Skinny-Dip.jpg" alt="Great British Skinny Dip">
+      <img id="slider" src="img/article/Great-British-Skinny-Dip.jpg" alt="Great British Skinny Dip">
 
       <!--Right button control-->
       <button onclick="rightArrow()">&gt;</button>
 
       <!-- Dots to indicate position in slideshow, controlled by the slideshow js function-->
-      <div class="ss-dot-container">
-        <span class="ss-dot" id="dot-1"></span>
-        <span class="ss-dot" id="dot-2"></span>
-        <span class="ss-dot" id="dot-3"></span>
-        <span class="ss-dot" id="dot-4"></span>
+      <div class="dot-container">
+        <span class="dot" id="dot-1"></span>
+        <span class="dot" id="dot-2"></span>
+        <span class="dot" id="dot-3"></span>
+        <span class="dot" id="dot-4"></span>
       </div>
 
       <!--Article title-->
-      <h2 class="ss-article-title">What nudists say about Wales's best nude beaches</h2>
+      <h2 class="article-title">What nudists say about Wales's best nude beaches</h2>
 
       <!--Article author-->
-      <h3 class="ss-article-author">by Demi Roberts</h3>
+      <h3 class="article-author">by Demi Roberts</h3>
 
       <!--Article teaser-->
-      <p class="ss-article-teaser">It might still be winter, but cold water skinny dipping is very much on trend</p>
+      <p class="article-teaser">It might still be winter, but cold water skinny dipping is very much on trend</p>
 
       <!--CTA button linking to article-->
-      <button class="ss-article-cta">Read More &gt;&gt;</button>
+      <button class="article-cta">Read More &gt;&gt;</button>
     </div>
     <!--end articles slideshow-->
   </main>
