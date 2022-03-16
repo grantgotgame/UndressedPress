@@ -1,15 +1,85 @@
-/*Load custom font*/
+/*Load custom fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rufina&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Metal&display=swap');
 
+/*Configure header grid container--------------*/
+#logo {
+  grid-area: logo;
+}
+
+.title-section {
+  grid-area: title;
+}
+
+#banner {
+  grid-area: banner;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-areas:
+    'logo title'
+    'banner banner'
+  ;
+}
+
+/*Index styles---------------------------------*/
 body {
   margin: 2em;
-  font-family: 'Roboto', sans-serif;
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-areas:
-  'header'
-  'main'
-  'footer';
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: #1CBFCB;
+  position: absolute;
+}
+
+header a {
+  text-decoration: none;
+}
+
+#logo {
+  height: 120px;
+}
+
+#logo img {
+  margin: 20px;
+  max-height: 90%;
+}
+
+.title-section {
+  text-align: center;
+}
+
+.title-section h1 {
+  margin: 0.2em;
+  font-family: 'Rufina', 'Times New Roman', Times, serif;
+  color: #E8D4A3;
+  font-size: 3em;
+}
+
+.subtitle-section {
+  margin: auto;
+  width: 40%;
+  background-color: #E8D4A3;
+}
+
+.subtitle-section h3 {
+  font-family: 'Metal', 'Times New Roman', Times, serif;
+  color: #AA4055;
+}
+
+/* privacy banner */
+#banner {
+  height: 30px;
+  left: 0px;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.8);
 }
 
 /* hover effect for buttons */
@@ -22,46 +92,6 @@ body {
   opacity: 1;
 }
 
-/* privacy banner */
-#banner {
-  grid-area: banner;
-  width: 100%;
-  height: 30px;
-  left: 0px;
-  top: 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.nav-section {
-  font-family: 'Times New Roman', Times, serif;
-  width: 100%;
-  height: 400px;
-  background-color: #1CBFCB;
-  max-height: 500px;
-  display: grid;
-  grid-template-columns: auto auto auto auto auto;
-  grid-template-areas: 'logo title title title title'
-  'banner banner banner banner banner';
-}
-
-#logo {
-  grid-area: logo;
-  /* float: left; */
-  padding-left: 10px;
-  padding-top: 0px;
-  height: 90px;
-}
-
-.title-section {
-  grid-area: title;
-  font-family: 'Times New Roman', Times, serif;
-  /* float: right; */
-  /* padding-right: 200px; */
-  /* padding-top: 35px; */
-  justify-content: center;
-}
 /*
 .ss {
   margin-top: 40px;
