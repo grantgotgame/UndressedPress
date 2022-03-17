@@ -1,9 +1,29 @@
-/*Load custom fonts*/
+/*
+Load custom fonts - 
+adapted from Jurassic Future team project (JF) with help from Google Fonts and Figma
+*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rufina&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Metal&display=swap');
 
-/*Configure header grid container--------------*/
+/*
+Configure global top-level grid container - 
+adapted from South London Online Reading Group example (SLORG) and Mozilla Developer Network (MDN)
+*/
+body {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas:
+    'header'
+    'main'
+    'footer'
+  ;
+}
+
+/*
+Configure header grid container - 
+adapted from SLORG with help from MDN
+*/
 #logo {
   grid-area: logo;
 }
@@ -25,7 +45,12 @@ header {
   ;
 }
 
-/*Index styles---------------------------------*/
+/*Start Index Styles---------------------------*/
+
+/*
+adapted from JF with help from SLORG, MDN, and W3schools (W3) and design inspiration from Undressed Press newsletter (UP)
+*/
+
 body {
   margin: 2em;
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
@@ -33,7 +58,7 @@ body {
 
 header {
   background-color: #1CBFCB;
-  position: absolute;
+  position: relative;
 }
 
 header a {
@@ -71,7 +96,7 @@ header a {
   color: #AA4055;
 }
 
-/* privacy banner */
+/*privacy banner - adapted from JF with help from MDN*/
 #banner {
   height: 30px;
   left: 0px;
@@ -82,7 +107,7 @@ header a {
   background: rgba(255, 255, 255, 0.8);
 }
 
-/* hover effect for buttons */
+/*hover effect for buttons - adapted from https://www.w3schools.com/howto/howto_css_transition_hover.asp */
 .button {
   opacity: .6;
   transition: 0.3s;
@@ -93,13 +118,71 @@ header a {
 }
 
 /*
-.ss {
-  margin-top: 40px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+Configure slideshow grid container - 
+adapted from SLORG with help from MDN
+*/
+#latest {
+  grid-area: latest;
 }
+
+#lb {
+  grid-area: lb;
+}
+
+#slider {
+  grid-area: slider;
+}
+
+#rb {
+  grid-area: rb;
+}
+
+.dot-container {
+  grid-area: dots;
+}
+
+.ss .article-title {
+  grid-area: ss-title;
+}
+
+.ss .article-author {
+  grid-area: ss-author;
+}
+
+.ss .article-teaser {
+  grid-area: ss-teaser;
+}
+
+.ss .article-cta {
+  grid-area: ss-cta;
+}
+
+.ss {
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-areas:
+    '. latest .'
+    'lb slider rb'
+    '. dots .'
+    '. ss-title .'
+    '. ss-author .'
+    '. ss-teaser .'
+    '. ss-cta .'
+  ;
+}
+
+/*Articles slideshow styles - adapted from JF*/
+
+.ss {
+  margin-top: 10px;
+  position: inherit;
+  width: 100%;
+  /* display: flex; */
+  align-items: center;
+  justify-items: center;
+}
+
+/*
 .ss img {
   width: 800px;
   height: 400px;
@@ -129,6 +212,7 @@ header a {
 .active, .dot:hover {
   background-color: #717171;
 }
+
 /*
 .description-container{
   font-family: 'Times New Roman', Times, serif;
@@ -151,43 +235,6 @@ header a {
   margin-bottom: 5vh;
 }
 
-/*direction page*/
-/*
-.direction-container {
-  display: flex;
-  align-items: center;
-
-}
-
-.direction-box {
-  width: 40%;
-  margin: 30px;
-  margin-left: 15vw;
-  padding: 30px;
-  background-color: #c4c4c4;
-  border-radius: 10px;
-}
-
-hr {
-  height: 1px;
-  background-color: whitesmoke;
-  border: none;
-}
-
-#travel {
-  width: 300px;
-  position: absolute;
-  z-index: 1;
-  left: 80vw;
-  animation-name: travelAnimation;
-  animation-duration: 4s;
-}
-
-.map {
-  width:250px;
-  height: 250px;
-}
-
 @keyframes travelAnimation {
   0%{
     transform: translateX(-80vw);
@@ -202,111 +249,12 @@ hr {
   }
 }
 
-.direction-logo {
-  width: 80px;
-  height: 80px;
-  margin-left: 40px;
-}
-.direction-logo object{
-  width: 80px;
-  height: 80px;
-}
-.map-logo {
-  margin-left: 60px;
-}
-
 a {
   display: inline-block;
 }
 object {
   pointer-events: none;
 }
-
-/*faq page*/
-/*
-.faq-question-container {
-  height: 40px;
-  width: 30%;
-  margin: 30px;
-  margin-left: 150px;
-  background: #0e0707;
-  display: flex;
-  align-items: center;
-}
-.faq-question-container h3 {
-  font-family: 'Times New Roman', Times, serif;
-  color: white;
-  padding-left: 30px;
-}
-
-.faq-answer-container {
-  font-family: 'Times New Roman', Times, serif;
-  width: 40%;
-  margin: 30px;
-  margin-left: 150px;
-  padding: 30px;
-  background-color: #c4c4c4;
-  border-radius: 10px;
-}
-
-.faq-contact-container {
-  font-family: 'Times New Roman', Times, serif;
-  width: 30%;
-  height: 65vh;
-  position: absolute;
-  top: 25vh;
-  right: 10vw;
-}
-.faq-contact-container input {
-  font-family: 'Times New Roman', Times, serif;
-  border: 1px solid #ccc;
-  background-color: #c4c4c4;
-  border-radius: 20px;
-  width: 250px;
-  padding-left: 10px;
-  font-size: 16px;
-  height: 50px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-}
-::placeholder {
-  color: white;
-}
-
-#email,
-#subject,
-.faq-contact-container textarea {
-  width: 540px;
-}
-
-.faq-contact-container textarea {
-  font-family: 'Times New Roman', Times, serif;
-  height: 350px;
-  background-color: #c4c4c4;
-  border: 1px solid #ccc;
-  border-radius: 20px;
-  padding-left: 15px;
-  padding-top: 5px;
-  font-size: 16px;
-  margin-bottom: 20px;
-}
-
-.faq-contact-container input[type="submit"] {
-  color: white;
-  float: right;
-  background-color: rgb(84, 110, 221);
-}
-
-.faq-answer-container table, th, td {
-  border:1px solid grey;
-}
-.faq-answer-container table{
-  width:100%;
-}
-.faq-answer-container td{
-  padding-left: 5px;
-}
-
 
 footer{
   font-family: 'Times New Roman', Times, serif;

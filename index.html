@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--
-  This website was created by Grant Howard Brown for a class project. It is intended to duplicate some of the functionality of the Undressed Press magazine, February 2022 issue, as a proof of concept. Undressed Press is a freely available product of the American Association for Nude Recreation (AANR). This website is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the AANR.
+  This website was created by Grant Howard Brown for a class project. It is intended to duplicate some of the functionality of the Undressed Press magazine, February 2022 issue, as a proof of concept. Undressed Press is a freely available product of the American Association for Nude Recreation (AANR). This website is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the AANR. The preceding statement was adapted from https://www.hackingtheheist.com/notice
 -->
 
 <head>
-  <!--Configure metadata for page-->
+  <!--
+    Configure metadata for page - adapted from Jurassic Future team project (JF) and https://www.digitalocean.com/community/tutorials/how-to-add-a-favicon-to-your-website-with-html
+  -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <meta name="author" content="Grant Brown">
   <meta name="description" content="Undressed Press February 2022">
   <title>Undressed Press</title>
+  <link rel="shortcut icon" href="img/logo/AANR-logo-favicon.png" />
   <link href="css/style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  <!--Begin global header-->
+  <!--
+    Begin global header - adapted from JF and South London Online Reading Group example (SLORG) with help from Mozilla Developer Network (MDN)
+  -->
   <header>
-    <!--Logo linking to homepage-->
+    <!--
+      Logo linking to homepage - Adapted from JF, with logo taken from http://www.aanr.com/ and edited with paint.net
+    -->
     <div id="logo">
       <a href="index.html">
         <img src="img/logo/AANR-logo-v3.png" alt="AANR logo">
@@ -39,13 +46,56 @@
     </div>
     </a>
 
-    <!--Privacy banner-->
+    <!--Privacy banner - adapted from JF-->
     <div id="banner">
       <small>AANR takes your privacy seriously. AANR DOES NOT divulge or sell your email or any personal
         information.</small>
     </div>
-    <!--End global top nav bar-->
+
+    <!--End global header-->
   </header>
+
+
+  <main>
+    <!--Begin articles slideshow - adapted from JF-->
+    <div class="ss">
+      <div></div>
+      <h2 id="latest">Latest AANR Articles</h2>
+      <div></div>
+
+      <!--Left button control-->
+      <button class="lb" onclick="leftArrow()">&lt;</button>
+
+      <!--Image loader-->
+      <img id="slider" src="img/article/Great-British-Skinny-Dip.jpg" alt="Great British Skinny Dip">
+
+      <!--Right button control-->
+      <button class="rb" onclick="rightArrow()">&gt;</button>
+
+      <!-- Dots to indicate position in slideshow, controlled by the slideshow js function-->
+      <div class="dot-container">
+        <span class="dot" id="dot-1"></span>
+        <span class="dot" id="dot-2"></span>
+        <span class="dot" id="dot-3"></span>
+        <span class="dot" id="dot-4"></span>
+      </div>
+
+      <!--Article title-->
+      <h2 class="article-title">What nudists say about Wales's best nude beaches</h2>
+
+      <!--Article author-->
+      <h3 class="article-author">by Demi Roberts</h3>
+
+      <!--Article teaser-->
+      <p class="article-teaser">It might still be winter, but cold water skinny dipping is very much on trend</p>
+
+      <!--CTA button linking to article-->
+      <button class="article-cta">Read More &gt;&gt;</button>
+    </div>
+    <!--end articles slideshow-->
+  </main>
+
+  <footer></footer>
 
 </body>
 
