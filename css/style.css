@@ -58,7 +58,7 @@ body {
 
 header {
   background-color: #1CBFCB;
-  position: relative;
+  position:relative;
 }
 
 header a {
@@ -171,28 +171,29 @@ adapted from SLORG with help from MDN
   ;
 }
 
-/*Articles slideshow styles - adapted from JF*/
+/*
+Articles slideshow styles - adapted from JF with help from MDN, https://www.w3schools.com/cssref/css_selectors.asp , https://stackoverflow.com/questions/13352080/match-all-elements-having-class-name-starting-with-a-specific-string , https://www.w3schools.com/css/css_text.asp
+*/
 
 .ss {
   margin-top: 10px;
   position: inherit;
   width: 100%;
-  /* display: flex; */
   align-items: center;
   justify-items: center;
 }
 
-/*
+
 .ss img {
-  width: 800px;
-  height: 400px;
-  margin-left: 10px;
-  margin-right: 10px;
-  border-radius: 10px;
+  max-width: 1024px;
+  height: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 20px;
   z-index: -1;
 }
 
-.dot-container{
+.dot-container {
   font-family: 'Times New Roman', Times, serif;
   text-align: center;
 }
@@ -202,41 +203,43 @@ adapted from SLORG with help from MDN
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: 0 2px;
+  margin: 1em 10px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
-  background-color: #717171;
+.active,
+.dot:hover {
+  background-color: black;
 }
 
-/*
-.description-container{
-  font-family: 'Times New Roman', Times, serif;
-  display: grid;
-  grid-template-columns: auto auto auto;
-  height: 35vh;
-  width: 100vw;
-  margin-top: 5vh;
-  margin-bottom: 5vh;
+.ss [class^='article-'] {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
 }
 
-.description-item{
-  font-family: 'Times New Roman', Times, serif;
-  width: 25vw;
+.article-cta {
+  height: 5vh;
+  width: 15vw;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  background-color: #c4c4c4;
+  color: white;
+  background-color: #0483C6;
   border-radius: 10px;
   margin-bottom: 5vh;
 }
 
+.article-cta:hover {
+  background-color: #1CBFCB;
+}
+
+/*
 @keyframes travelAnimation {
-  0%{
+  0% {
     transform: translateX(-80vw);
   }
 
@@ -248,19 +251,17 @@ adapted from SLORG with help from MDN
     transform: translateX(0);
   }
 }
+*/
 
-a {
-  display: inline-block;
-}
-object {
+ object {
   pointer-events: none;
-}
-
-footer{
+} 
+/*
+footer {
   font-family: 'Times New Roman', Times, serif;
   width: 100%;
   background-color: #1CBFCB;
-  bottom:0;
+  bottom: 0;
   text-align: center;
   color: white;
-} 
+}
