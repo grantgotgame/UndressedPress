@@ -70,8 +70,11 @@ header a {
 }
 
 .logo img {
-  margin: 20px;
   max-height: 90%;
+}
+
+header .logo img {
+  margin: 20px;
 }
 
 .title-section {
@@ -283,19 +286,25 @@ footer .logo.share.gmail {
 
 footer {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
     'mission mission mission mission mission'
     'flogo fb tw ig gm'
   ;
 }
 
-/*
+/* 
+Global footer styles - adapted from JF and header styles with help from W3
+*/
 footer {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
   width: 100%;
   background-color: #1CBFCB;
-  bottom: 0;
-  text-align: center;
-  color: white;
+  align-content: center;
+}
+
+footer .mission,
+footer .logo {
+  margin-left: 20px;
+  margin-right: 20px;
 }
