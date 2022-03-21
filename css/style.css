@@ -164,7 +164,7 @@ adapted from SLORG with help from MDN
   display: grid;
   grid-template-columns: 1fr 8fr 1fr;
   grid-template-areas:
-    '. latest .'
+    'latest latest latest'
     'lb slider rb'
     '. dots .'
     '. ss-title .'
@@ -254,6 +254,7 @@ Articles slideshow styles - adapted from JF with help from MDN, https://www.w3sc
     transform: translateX(0);
   }
 }
+*/
 
 /*
 Configure footer grid container - 
