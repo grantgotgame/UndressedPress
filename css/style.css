@@ -24,8 +24,8 @@ body {
 Configure header grid container - 
 adapted from SLORG with help from MDN
 */
-#logo {
-  grid-area: logo;
+header .logo {
+  grid-area: hlogo;
 }
 
 .title-section {
@@ -40,7 +40,7 @@ header {
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-areas:
-    'logo title'
+    'hlogo title'
     'banner banner'
   ;
 }
@@ -58,18 +58,18 @@ body {
 
 header {
   background-color: #1CBFCB;
-  position:relative;
+  position: relative;
 }
 
 header a {
   text-decoration: none;
 }
 
-#logo {
+.logo {
   height: 120px;
 }
 
-#logo img {
+.logo img {
   margin: 20px;
   max-height: 90%;
 }
@@ -251,11 +251,45 @@ Articles slideshow styles - adapted from JF with help from MDN, https://www.w3sc
     transform: translateX(0);
   }
 }
+
+/*
+Configure footer grid container - 
+adapted from header grid container with help from https://www.w3schools.com/cssref/css_selectors.asp
 */
 
- object {
-  pointer-events: none;
-} 
+.mission {
+  grid-area: mission;
+}
+
+footer .logo.aanr {
+  grid-area: flogo;
+}
+
+footer .logo.share.facebook {
+  grid-area: fb;
+}
+
+footer .logo.share.twitter {
+  grid-area: tw;
+}
+
+footer .logo.share.instagram {
+  grid-area: ig;
+}
+
+footer .logo.share.gmail {
+  grid-area: gm;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    'mission mission mission mission mission'
+    'flogo fb tw ig gm'
+  ;
+}
+
 /*
 footer {
   font-family: 'Times New Roman', Times, serif;
