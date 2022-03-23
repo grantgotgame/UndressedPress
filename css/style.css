@@ -224,7 +224,7 @@ Articles slideshow styles - adapted from JF with help from MDN, https://www.w3sc
   margin-bottom: 1vh;
 }
 
-.article-cta {
+.article-cta button {
   height: 5vh;
   width: 15vw;
   margin-left: auto;
@@ -233,10 +233,9 @@ Articles slideshow styles - adapted from JF with help from MDN, https://www.w3sc
   color: white;
   background-color: #0483C6;
   border-radius: 10px;
-  margin-bottom: 5vh;
 }
 
-.article-cta:hover {
+.article-cta:hover button {
   background-color: #1CBFCB;
 }
 
@@ -302,6 +301,7 @@ footer {
   width: 100%;
   background-color: #1CBFCB;
   align-content: center;
+  margin-top: 20px;
 }
 
 footer .mission,
