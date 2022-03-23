@@ -175,7 +175,7 @@ adapted from SLORG with help from MDN
 }
 
 /*
-Articles slideshow styles - adapted from JF with help from MDN, https://www.w3schools.com/cssref/css_selectors.asp , https://stackoverflow.com/questions/13352080/match-all-elements-having-class-name-starting-with-a-specific-string , https://www.w3schools.com/css/css_text.asp
+Articles slideshow styles - adapted from JF with help from MDN, https://www.w3schools.com/cssref/css_selectors.asp , https://stackoverflow.com/questions/13352080/match-all-elements-having-class-name-starting-with-a-specific-string , https://www.w3schools.com/css/css_text.asp , https://www.tutorialrepublic.com/faq/how-to-change-the-cursor-into-a-hand-pointer-on-hover-using-css.php
 */
 
 .ss {
@@ -237,6 +237,7 @@ Articles slideshow styles - adapted from JF with help from MDN, https://www.w3sc
 
 .article-cta:hover button {
   background-color: #1CBFCB;
+  cursor: pointer;
 }
 
 /*
