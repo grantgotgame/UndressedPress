@@ -12,7 +12,7 @@ adapted from South London Online Reading Group example (SLORG) and Mozilla Devel
 */
 body {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 100%;
   grid-template-areas:
     'header'
     'main'
@@ -45,20 +45,23 @@ header {
   ;
 }
 
-/*Start Index Styles---------------------------*/
+/*Start Header Styles--------------------------*/
 
 /*
 adapted from JF with help from SLORG, MDN, and W3schools (W3) and design inspiration from Undressed Press newsletter (UP)
 */
 
 body {
-  margin: 2em;
+  margin: 20px;
+  max-width: 100%;
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
 header {
   background-color: #1CBFCB;
   position: relative;
+  width: max-content;
+  max-width: 100%;
 }
 
 header a {
@@ -71,6 +74,8 @@ header a {
 
 .logo img {
   max-height: 90%;
+  width: auto;
+  max-width: 100%;
 }
 
 header .logo img {
@@ -102,23 +107,13 @@ header .logo img {
 /*privacy banner - adapted from JF with help from MDN*/
 #banner {
   height: 30px;
-  left: 0px;
-  top: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
   background: rgba(255, 255, 255, 0.8);
 }
 
-/*hover effect for buttons - adapted from https://www.w3schools.com/howto/howto_css_transition_hover.asp */
-.button {
-  opacity: .6;
-  transition: 0.3s;
-}
-
-.button:hover {
-  opacity: 1;
-}
+/*End header styles----------------------------*/
 
 /*
 Configure slideshow grid container - 
@@ -174,6 +169,14 @@ adapted from SLORG with help from MDN
   ;
 }
 
+/*Start main styles----------------------------*/
+
+/*added to make responsive look better*/
+main {
+  max-width: 100%;
+  position: relative;
+}
+
 /*
 Articles slideshow styles - adapted from JF with help from MDN, https://www.w3schools.com/cssref/css_selectors.asp , https://stackoverflow.com/questions/13352080/match-all-elements-having-class-name-starting-with-a-specific-string , https://www.w3schools.com/css/css_text.asp , https://www.tutorialrepublic.com/faq/how-to-change-the-cursor-into-a-hand-pointer-on-hover-using-css.php
 */
@@ -181,13 +184,14 @@ Articles slideshow styles - adapted from JF with help from MDN, https://www.w3sc
 .ss {
   margin-top: 10px;
   position: inherit;
-  width: 100%;
+  max-width: 95%;
   align-items: center;
   justify-items: center;
 }
 
 
 .ss img {
+  width: 90%;
   max-width: 1024px;
   height: auto;
   margin-left: 20px;
@@ -239,6 +243,32 @@ Articles slideshow styles - adapted from JF with help from MDN, https://www.w3sc
   background-color: #1CBFCB;
   cursor: pointer;
 }
+
+/*hover effect for buttons - adapted from https://www.w3schools.com/howto/howto_css_transition_hover.asp */
+.button {
+  opacity: .6;
+  transition: 0.3s;
+}
+
+.button:hover {
+  opacity: 1;
+}
+
+/* 
+Article pages styles - adapted from homepage styles
+*/
+
+.article-image {
+  width: 80%;
+  max-width: 1024px;
+  height: auto;
+  margin-left: 0;
+  margin-right: 20px;
+  border-radius: 20px;
+  z-index: -1;
+}
+
+/*End Main styles------------------------------*/
 
 /*
 @keyframes travelAnimation {
@@ -294,15 +324,19 @@ footer {
   ;
 }
 
-/* 
-Global footer styles - adapted from JF and header styles with help from W3
+/*Start footer styles--------------------------*/
+/*
+adapted from JF and header styles with help from W3
 */
 footer {
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
-  width: 100%;
+  max-width: 100%;
+  width: max-content;
   background-color: #1CBFCB;
   align-content: center;
   margin-top: 20px;
+  margin-right: 20px;
+  position: relative;
 }
 
 footer .mission,
@@ -311,15 +345,16 @@ footer .logo {
   margin-right: 20px;
 }
 
-/* 
-Article pages styles - adapted from homepage styles
-*/
-
-.article-image {
-  max-width: 1024px;
+footer img {
   height: auto;
-  margin-left: 0;
-  margin-right: 20px;
-  border-radius: 20px;
-  z-index: -1;
+  max-height: 100%;
+  width: 150px;
+  max-width: 100%;
 }
+
+footer .share img {
+  max-height: 90%;
+  width: 120px;
+}
+
+/*End footer styles----------------------------*/
