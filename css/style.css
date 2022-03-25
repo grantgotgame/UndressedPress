@@ -53,7 +53,7 @@ adapted from JF with help from SLORG, MDN, and W3schools (W3) and design inspira
 
 body {
   margin: 20px;
-  max-width: 100%;
+  max-width: 1024px;
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
@@ -230,7 +230,7 @@ Articles slideshow styles - adapted from JF with help from MDN, https://www.w3sc
 
 .article-cta button {
   height: 5vh;
-  width: 15vw;
+  width: 200px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
