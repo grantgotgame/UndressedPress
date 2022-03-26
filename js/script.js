@@ -47,7 +47,7 @@ function changeImg() {
     document.getElementById("ss-title").innerHTML = title[i];
     document.getElementById("ss-author").innerHTML = author[i];
     document.getElementById("ss-teaser").innerHTML = teaser[i];
-    document.getElementById("ss-link").href = link[i];
+    document.getElementById("ss-link").action = link[i];
     resetDot();
     document.getElementById("dot-" + [i + 1]).style.backgroundColor = "#717171";
 }
