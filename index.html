@@ -15,6 +15,11 @@
   <title>Undressed Press</title>
   <link rel="shortcut icon" href="img/logo/AANR-logo-favicon.png" />
   <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <!--Load additional stylesheet if javascript is disabled - adapted from https://mkyong.com/javascript/display-different-content-if-javascript-is-disabled/
+  -->
+  <noscript>
+    <link href="css/nojs.css" rel="stylesheet" type="text/css">
+  </noscript>
 </head>
 
 <body>
@@ -57,7 +62,8 @@
   </header>
 
   <main>
-    <!--Begin articles slideshow - adapted from JF-->
+    <!--Begin articles slideshow---------------->
+    <!--adapted from JF-->
     <div class="ss">
       <h2 id="latest">Latest AANR Articles</h2>
 
@@ -95,7 +101,110 @@
         </a>
       </div>
     </div>
-    <!--end articles slideshow-->
+    <!--end articles slideshow------------------>
+
+    <!--Begin javascript-free articles display-->
+    <noscript>
+      <h2>Latest Articles</h2>
+      <!--Article 1/4-->
+      <!--Article image-->
+      <img class="article-image" src="img/article/Great-British-Skinny-Dip.jpg"
+        alt="Great British Skinny Dip, Studland Beach">
+
+      <!--Article title-->
+      <h2 class="article-title" id="ss-title">What nudists say about Wales's best nude beaches</h2>
+
+      <!--Article author-->
+      <h3 class="article-author" id="ss-author">by Demi Roberts</h3>
+
+      <!--Article teaser-->
+      <p class="article-teaser" id="ss-teaser">It might still be winter, but cold water skinny dipping is very much on
+        trend</p>
+
+      <!--CTA button linking to article-->
+      <div class="article-cta">
+        <a href="beaches.html" id="ss-link">
+          <button>Read More &gt;&gt;</button>
+        </a>
+      </div>
+      <br><br>
+
+      <!--Article 2/4-->
+      <!--Article image-->
+      <img class="article-image" src="img/article/seminude-hikers.jpg" alt="Photograph of seminude hikers">
+
+      <!--Article title-->
+      <h2 class="article-title" id="ss-title">Everybody Naked: Can Naturism become a Trend?</h2>
+
+      <!--Article author-->
+      <h3 class="article-author" id="ss-author">by Nick & Lins</h3>
+
+      <!--Article teaser-->
+      <p class="article-teaser" id="ss-teaser">What’s a trend? It’s basically something that suddenly becomes very
+        popular.</p>
+
+      <!--CTA button linking to article-->
+      <div class="article-cta">
+        <a href="trend.html" id="ss-link">
+          <button>Read More &gt;&gt;</button>
+        </a>
+      </div>
+      <br><br>
+
+      <!--Article 3/4-->
+      <!--Article image-->
+      <img class="article-image" src="img/article/nude-hot-springs-1.jpg"
+        alt="Illustration of woman at Nude Hot Springs">
+
+      <!--Article title-->
+      <h2 class="article-title" id="ss-title">How a Visit to Nude Hot Springs Helped Me Confront My Fear of Aging</h2>
+
+      <!--Article author-->
+      <h3 class="article-author" id="ss-author">by Ashley Brooks</h3>
+
+      <!--Article teaser-->
+      <p class="article-teaser" id="ss-teaser">A day spent bathing among naked strangers helped writer Ashley Brooks
+        become more comfortable in her own skin.</p>
+
+      <!--CTA button linking to article-->
+      <div class="article-cta">
+        <a href="fear.html" id="ss-link">
+          <button>Read More &gt;&gt;</button>
+        </a>
+      </div>
+      <br><br>
+
+      <!--Article 4/4-->
+      <!--Article image-->
+      <img class="article-image" src="img/article/man-sleeping-naked.jpg" alt="Man sleeping naked">
+
+      <!--Article title-->
+      <h2 class="article-title" id="ss-title">7 Reasons Why Sleeping Naked Means Sleeping Better</h2>
+
+      <!--Article author-->
+      <h3 class="article-author" id="ss-author">by Sara Novak</h3>
+
+      <!--Article teaser-->
+      <p class="article-teaser" id="ss-teaser">And one reason why it’s actually gross.</p>
+
+      <!--CTA button linking to article-->
+      <div class="article-cta">
+        <a href="sleep.html" id="ss-link">
+          <button>Read More &gt;&gt;</button>
+        </a>
+      </div>
+      <br><br>
+    </noscript>
+    <!--End javascript-free articles display----->
+
+    <!--Link to Appendices-->
+    <div id="appendices">
+      <h3>Appendices</h3>
+      <ul>
+        <li><a href="sitemap.html">Site Map</a></li>
+        <li><a href="report.html">Report for Instructors</a></li>
+      </ul>
+    </div>
   </main>
 
   <!--Begin global footer----------------------->

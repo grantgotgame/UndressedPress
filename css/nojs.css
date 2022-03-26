@@ -1,0 +1,7 @@
+/*
+Disable articles slider when javascript is disabled - adapted from mkyong.com/javascript/display-different-content-if-javascript-is-disabled/
+*/
+
+.ss {
+  display: none;
+}
