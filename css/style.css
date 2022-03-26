@@ -89,13 +89,17 @@ https://stackoverflow.com/questions/2182716/is-it-possible-to-set-the-equivalent
 https://developer.mozilla.org/en-US/docs/Web/CSS/url
 */
 @media screen and (max-width: 1023px) {
-  .logo.aanr img {
+
+  #hlogo,
+  #flogo {
     content: url("../img/logo/AANR-logo-favicon.png");
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .logo.aanr img {
+
+  #hlogo,
+  #flogo {
     content: url("../img/logo/AANR-logo-v3.png");
   }
 }
@@ -129,6 +133,32 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/url
   justify-content: center;
   align-items: center;
   background: rgba(255, 255, 255, 0.8);
+}
+
+/*Animation adapted from JF*/
+/*I edited the image in paint.net and changed the values to make it move across the screen and rest over the AANR logo*/
+
+#na {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  animation-name: naAnimation;
+  animation-duration: 4s;
+}
+
+@keyframes naAnimation {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(60vw);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
 
 /*End header styles----------------------------*/
@@ -286,22 +316,6 @@ Article pages styles - adapted from homepage styles
 }
 
 /*End Main styles------------------------------*/
-
-/*
-@keyframes travelAnimation {
-  0% {
-    transform: translateX(-80vw);
-  }
-
-  50% {
-    transform: translateX(5vw);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-}
-*/
 
 /*
 Configure footer grid container - 
