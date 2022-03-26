@@ -231,7 +231,6 @@ Articles slideshow styles - adapted from JF with help from MDN, https://www.w3sc
 .ss {
   margin-top: 10px;
   position: inherit;
-  max-width: 95%;
   align-items: center;
   justify-items: center;
 }
