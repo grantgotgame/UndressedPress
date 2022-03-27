@@ -62,28 +62,129 @@
     <h4>Introduction:</h4>
     <blockquote>What is the essential story being told by your site and what type of structure did you choose to
       implement.</blockquote>
-    <p>[ANSWER HERE]</p>
+    <p>The essential story being told by my site is that naturism is a popular and beneficial activity that can be
+      enjoyed responsibly.</p>
+    <p>My site is using a header and footer that contain basic information and links and a main section that contains
+      articles and links to them. Because I am reproducing the functionality of a <a
+        href="resources/February%202022_UP.pdf" target="_blank">pdf newsletter</a>, I went with a publication structure.
+      Each article is a summary that links out to the full article, which is how they were presented in the newsletter.
+      The content for each article is unique, so I tried to respect the layout of the original content as much as time
+      allowed, while maintaining a consistent format for all the content.</p>
 
     <h4>State 3 things that have inspired you when creating your website.</h4>
     <blockquote>These could include guest speakers, other websites, artists, developers etc.</blockquote>
-    <p>[ANSWER HERE]</p>
+    <ol>
+      <li><a href="https://hub.labs.coursera.org:443/connect/sharediwkssqut?forceRefresh=false&path=%2F"
+          target="_blank">Jurassic Future (JF)</a>: Because I was on the team that created this website, I was already
+        intimately familiar with it and had access to all the source materials, so it was a great starting point for my
+        site structure, although it required major adaptations.</li>
+      <li><a href="resources/February%202022_UP.pdf" target="_blank">Undressed Press pdf newsletter (UP)</a>: This was
+        the main source material for the content and design of the website. I replicated the color scheme and the
+        content of the articles (with some additional content from the source articles). I also tried to imitate the
+        title and subtitle section of the header and the Share
+        section of the footer based on UP.</li>
+      <li><a href="https://www.aanr.com/" target="_blank">AANR.com</a>: I took design inspiration from the <a
+          href="http://www.aanr.com/aanr-articles-stories/?_categories=undressed-press" target="_blank">Undressed
+          Press</a>
+        section of the AANR website when designing the articles carousel on my homepage and the "Read More >>"
+        button that I use across the site. I also pulled the AANR logo and edited it in PAINT.net. Additionally, I
+        referenced the <a href="http://www.aanr.com/about-aanr/" target="_blank">About</a> section when building out the
+        Mission statement for my footer.</li>
+    </ol>
 
     <h4>State 3 ways in which your site is accessible.</h4>
-    <p>[ANSWER HERE]</p>
+    <ol>
+      <li>All images have alt attributes for visually-impaired users.</li>
+      <li>All important text is machine-readable.</li>
+      <li>The site displays well when magnified to 200% zoom.</li>
+    </ol>
 
     <h4>State 3 ways in which you have considered usability in your site.</h4>
-    <p>[ANSWER HERE]</p>
+    <ol>
+      <li>The site functions with or without javascript.</li>
+      <li>The site displays well on desktop, tablet, and mobile devices.</li>
+      <li>All important links can be accessed using the keyboard.</li>
+    </ol>
 
     <h4>State 3 things you had to learn/find out by yourself when creating your site, and describe how you did that</h4>
     <blockquote>(i.e. what searches you did, any new tools/techniques you learned, any changes/adaptations you made to a
       particular resource to make it work with your site).</blockquote>
-    <p>[ANSWER HERE]</p>
+    <ol>
+      <li>
+        <p>I did not understand how CSS grids worked when I started the project. I was able to figure it out mostly by
+          poking through the South London Online Reading Group (SLORG) example that was included in our coursework. I
+          also
+          googled 'grid-template-columns' and came across <a
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns" target="_blank">helpful</a>
+          MDN
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas" target="_blank">resources</a>.
+          Using these and JF as reference points I was able to construct my grids. However, I wanted a header and footer
+          whose internal elements were not related to each other, so this presented an additional challenge. I was able
+          to
+          figure it out through lots of experimentation and reading.</p>
+        <p>I struggled to implement a separate header, footer, and main section with a single grid and eventually
+          realized the way I wanted to do it was impossible without nested grids, so I used nested grids. I also
+          realized through this process that the way I had my tags nested was not compatible with a grid structure, so I
+          had to rewrite a lot of my code and change my site structure so my grids would work. This change is visible
+          when you look at how my wireframes evolved as I built out the site.</p>
+      </li>
+      <li>
+        <p>Even after my grids were constructed, I had a hard time figuring out how to make all my content align
+          correctly. I researced CSS width and max-width and learned that setting a percentage for the value makes them
+          dependent on their parent elements. Eventually, this clicked and I realized I needed a max-width argument set
+          at
+          the top level that was not a percentage and nested width arguments that were percentages. Once I figured this
+          out, everything lined up nicely. However, I also learned I had to set max-width for my images so that they
+          wouldn't cause my header and footer to overflow.</p>
+      </li>
+      <li>
+        <p>I only vaguely understood how media queries work before this project but I didn't have much trouble figuring
+          them out. I googled media queries and found a useful W3schools <a
+            href="https://www.w3schools.com/html/html_responsive.asp" target="_blank">resource</a>. The example from
+          W3schools used inline styles, which I didn't want to do, so I googled 'change img src with css' and found a
+          stackoverflow <a
+            href="https://stackoverflow.com/questions/2182716/is-it-possible-to-set-the-equivalent-of-a-src-attribute-of-an-img-tag-in-css"
+            target="_blank">solution</a>. I stitched together my code from the preceding examples but my hyperlinks
+          weren't working correctly, so I googled 'content:url' and found an MDN <a
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS/url" target="_blank">resource</a> that helped me
+          understand (from one of the examples) that I needed to append '../' to the beginning of my URL. I recognized
+          the
+          pattern as similar to what one would use in DOS/Windows command prompt to go up a level in a directory
+          structure.</p>
+      </li>
+    </ol>
 
     <h4>What aspect(s) of your work do you think worked well and why?</h4>
-    <p>[ANSWER HERE]</p>
+    <ul>
+      <li>
+        I'm happy with the design language of the site. I think I was able to create something that looks similar to the
+        source material. It looks like it could have come from the same organization. It's also clean, simple, and
+        well-organized. In my humble opinion, what I've presented is more professional and elegant than the source
+        material.
+      </li>
+      <li>Accessibility and usability were key considerations and I think it shows. Looking at the HTML-only version of
+        my site, everything is still fully functional and easy to navigate. The same is true whether you're on desktop,
+        tablet, mobile, or if you are using a screen reader or magnification.</li>
+      <li>My article page structure is flexible enough for multiple types of content. For example, one of the articles
+        has Instagram embeds, which worked fine. Another had horizontal rules. Others had additional inline images. None
+        of these presented an issue, as my css was slim enough not to interfere.</li>
+    </ul>
 
     <h4>What aspect(s) of your work could be improved, and how might you do things differently another time?</h4>
-    <p>[ANSWER HERE]</p>
+    <ul>
+      <li>I'm not a fan of the articles slider on the homepage. I'd much rather replace it with an articles grid that
+        scales with the screen size but the slider was recommended and a faster way to demonstrate my ability to
+        implement javascript. I also realize that my dots hover effect on mouseover is overwritten by my javascript but
+        I didn't consider it a high enough priority to fix.</li>
+      <li>The footer Share section is a little awkward and the logos don't display as uniformly as I'd like. I spent a
+        lot of time on this and ended up having to move on from a solution that's not quite where I'd like it to be.
+      </li>
+      <li>The site is not very scalable. For example, the header and footer are statically coded on each page. This
+        means that a single change to the header or footer has to be copied and pasted five times, and more if I were to
+        add additional pages. Also, each article is constructed individually without a meaningful structure for the
+        URLs, images, etc. If I were to scale the site up to support future newsletters, I'd need to rethink the
+        directory structure.</li>
+    </ul>
 
     <h4>What resources were used when creating your work?</h4>
     <blockquote>You should list here any sources of information, libraries, plug-ins or other code that you used to
