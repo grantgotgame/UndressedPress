@@ -225,7 +225,10 @@ main {
 }
 
 /*
-Articles slideshow styles - adapted from JF with help from MDN, https://www.w3schools.com/cssref/css_selectors.asp , https://stackoverflow.com/questions/13352080/match-all-elements-having-class-name-starting-with-a-specific-string , https://www.w3schools.com/css/css_text.asp , https://www.tutorialrepublic.com/faq/how-to-change-the-cursor-into-a-hand-pointer-on-hover-using-css.php
+Articles slideshow styles - adapted from JF with help from MDN, https://www.w3schools.com/cssref/css_selectors.asp ,
+https://stackoverflow.com/questions/13352080/match-all-elements-having-class-name-starting-with-a-specific-string , 
+https://www.w3schools.com/css/css_text.asp , 
+https://www.tutorialrepublic.com/faq/how-to-change-the-cursor-into-a-hand-pointer-on-hover-using-css.php
 */
 
 .ss {
@@ -312,6 +315,11 @@ Article pages styles - adapted from homepage styles
   margin-right: 20px;
   border-radius: 20px;
   z-index: -1;
+}
+
+/*Report image styles*/
+.report-image {
+  height: 200px;
 }
 
 /*End Main styles------------------------------*/
